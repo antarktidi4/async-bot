@@ -3,7 +3,7 @@ from vkwave.bots import SimpleLongPollBot, TaskManager, ClonesBot
 from bs4 import BeautifulSoup as BS 
 from random import randint
 
-gId = 195849524
+gId = 189021062
 token = os.environ.get('BOT_TOKEN')
 
 bot = SimpleLongPollBot(tokens = token, group_id = gId)
