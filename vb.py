@@ -37,7 +37,6 @@ async def zamayAnec(event: bot.SimpleBotEvent):
 @bot.message_handler(lambda e: 'смешной анекдот' in e.object.object.message.text)
 async def holoc1(event: bot.SimpleBotEvent):
 	global s
-	print(s)
 	await event.answer('что может быть страшнее, чем откусить от яблока и обнаружить в нем червя?')
 	s = 1
 
@@ -45,7 +44,6 @@ async def holoc1(event: bot.SimpleBotEvent):
 @bot.message_handler(lambda e: 'что' in e.object.object.message.text and s == 1 or 'чё' in e.object.object.message.text and s == 1)
 async def holoc2(event: bot.SimpleBotEvent):
 	global s
-	print(s)
 	await event.answer('холокост')
 	s = 0
 
