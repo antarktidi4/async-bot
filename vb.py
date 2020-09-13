@@ -16,7 +16,7 @@ async def dateBeforeSc(event: bot.SimpleBotEvent):
 	sept = datetime.date(2021, 9, 1)
 	date = sept - now
 	date = str(date)
-	if date >= datetime.date(2020, 9, 1) and date <= datetime.date(2021, 6, 1):
+	if now >= datetime.date(2020, 9, 1) and now <= datetime.date(2021, 6, 1):
 		await event.answer('дней до конца учебного года: ' + datetime.date(2021, 6, 1) - now)
 	else:
 		await event.answer('дней до учебного года: ' + date[:3])
