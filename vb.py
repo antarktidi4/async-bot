@@ -13,9 +13,12 @@ bot = SimpleLongPollBot(tokens = token, group_id = gId)
 @bot.message_handler(lambda e: 'дней до школы' in e.object.object.message.text)
 async def dateBeforeSc(event: bot.SimpleBotEvent):
 	now = datetime.date.today()
-	sept = datetime.date(2020, 9, 1)
+	sept = datetime.date(2021, 9, 1)
 	date = sept - now
 	date = str(date)
+	if date >= datetime.date(2020, 9, 1) and <= datetime.date(2021, 6, 1):
+	await event.answer('дней до конца учебного года: ' + datetime.date(2021, 6, 1) - now)
+	else:
 	await event.answer('дней до учебного года: ' + date[:3])
 
 
