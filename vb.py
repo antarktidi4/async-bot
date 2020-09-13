@@ -1,5 +1,5 @@
 import requests, os, datetime, asyncio 
-from vkwave.bots import SimpleLongPollBot, TaskManager, ClonesBot
+from vkwave.bots import SimpleLongPollBot
 from bs4 import BeautifulSoup as BS
 from random import randint
 
