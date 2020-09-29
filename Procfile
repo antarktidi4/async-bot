@@ -1,1 +1,1 @@
-worker: python vb.py
+worker: python asyncVkBot.py

@@ -1,3 +1,7 @@
+urllib.request
 bs4 
 vkwave
 requests
+os
+random
+datetime
