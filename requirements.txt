@@ -1,4 +1,4 @@
-bs4 
-vkwave
+discord.py
+bs4
+asyncio
 requests
-
