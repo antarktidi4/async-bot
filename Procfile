@@ -1,1 +1,1 @@
-worker: python asyncVkBot.py
+worker: python main.py
